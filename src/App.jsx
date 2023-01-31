@@ -169,10 +169,8 @@ const App = () => {
         foundShips = allStarships.filter(ship => ship.manufacturer.includes(selectedManufacturer));
       }
 
-      setTimeout(() => {
-        setFilteredShips(foundShips);
-        setStatus('loaded');
-      }, 1000);
+      setFilteredShips(foundShips);
+      setStatus('loaded');
     }
   }, [selectedManufacturer]);
 
